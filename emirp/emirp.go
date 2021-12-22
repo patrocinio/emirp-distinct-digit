@@ -29,7 +29,8 @@ func prime_number(num int) bool {
 func distinct_digits(i int) bool {
 	var digits [10]bool
 
-	digits[0] = true
+	// Exclude the digit 0
+	//digits[0] = true
 
 	for i > 0 {
 		var dig = i % 10
